@@ -14,12 +14,15 @@
     <body class="container-fluid">
       <h1>Job Queue</h1>
       <p>This app fetches HTML data from URLs and adds that HTML to a database. To begin a job, add a URL then click 'Submit'. </p>
-        <div>
+        <div id="AddJob">
             <form id="URLForm">
                 <div class="center">
                     <input name="URL" type="text" placeholder="URL" class="input-field">
-                    <button>Submit</button>
+                    <button id="submitURLButton" type="submit">Submit</button>
                       </div>
                         </form>
+        <div id="jobID">
+          <div class="right">
+            </div>
     </body>
 </html>
