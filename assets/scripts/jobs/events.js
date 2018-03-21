@@ -11,9 +11,17 @@ const onAddJobSubmit = function (event) {
     .then(ui.onAddJobSuccess)
     .catch(ui.onAddJobFailure)
 }
+const onShowJobs = function (event) {
+  event.preventDefault()
+  console.log(onShowJobs)
+  api.showJobs()
+    .then(ui.onshowJobsSuccess)
+    .catch(ui.onshowJobsFailure)
+}
 
 const eventListeners = function () {
   $('#URLForm').on('submit', onAddJobSubmit)
+  $('#showJobs').on('click', onShowJobs)
 }
 module.exports = {
   eventListeners
