@@ -12,9 +12,12 @@ const onAddJobFailure = function () {
 
 const onShowJobsSuccess = function (data) {
   store.jobs = data.jobs
-  console.log('onShowJobsSucces data', data)
-  $('#showAllJobs').html(data)
+  data.jobs.forEach(job => {
+    $('#show-jobs ul').append($('<li>').text(`${job.url}`))
+  })
 }
+  // console.log('onShowJobsSucces data', data)
+  // $('#showAllJobs').html(data)
 
 const onShowJobFailure = function (data) {
   $('#showAlljobs').text('error')
