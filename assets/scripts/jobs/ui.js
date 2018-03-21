@@ -11,13 +11,13 @@ const onAddJobFailure = function () {
 }
 
 const onShowJobsSuccess = function (data) {
-  store.job = data.job
-  console.log(data)
-  $('#showJobs').html(data.job.url + ': ' + data.job._id)
+  store.jobs = data.jobs
+  console.log('onShowJobsSucces data', data)
+  $('#showAllJobs').html(data)
 }
 
-const onShowJobFailure = function () {
-  $('#showJobs').text('error')
+const onShowJobFailure = function (data) {
+  $('#showAlljobs').text('error')
 }
 
 module.exports = {
