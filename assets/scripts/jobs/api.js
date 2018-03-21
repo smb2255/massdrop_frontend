@@ -10,7 +10,7 @@ const addJob = function (data) {
     headers: {
       'Content-Type': 'application/json'
     },
-    data
+    data: JSON.stringify(data)
   })
 }
 
