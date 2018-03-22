@@ -3,7 +3,7 @@ const store = require('../store')
 
 const onAddJobSuccess = function (data) {
   console.log(data)
-  $('#jobID').html(data.job.url + ': ' + data.job._id)
+  $('#jobID').html(data.job.url + ' id: ' + data.job._id)
 }
 
 const onAddJobFailure = function () {
@@ -16,8 +16,6 @@ const onShowJobsSuccess = function (data) {
     $('#show-jobs ul').append($('<li>').text(`${job.url}`))
   })
 }
-  // console.log('onShowJobsSucces data', data)
-  // $('#showAllJobs').html(data)
 
 const onShowJobFailure = function (data) {
   $('#showAlljobs').text('error')
