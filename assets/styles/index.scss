@@ -3,10 +3,59 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 body {
   font: 100% Helvetica, sans-serif;
-  background-color: #FFC300;
-  align-content: center
+  background-color: #DAF7A6;
+  text-align: center;
 }
 
 h1 {
   font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  text-align: center;
+  color: #900C3F
+}
+
+h2 {
+  color: #FF5733;
+  font-size: 17px;
+  font-family:'Comfortaa';
+}
+
+.id {
+  color: #FF5733;
+  font-size: 20px;
+  font-family:'Comfortaa';
+}
+
+.center {
+  font-size: 20px;
+  font-family:'Comfortaa';
+}
+
+li {
+    list-style: square;
+    list-style-position: inside;
+    color: #FF5733;
+    font-size: 17px;
+    font-family:'Comfortaa';
+}
+
+.button {
+  color: #581845;
+}
+.clickMe {
+  color: #581845;
+  font-size: 12px;
+  font-family:'Comfortaa';
+}
+
+p {
+  color: #900C3F;
+  font-size: 15px;
+  font-family:'Comfortaa';
+}
+
+h3 {
+  color: #FF5733;
+  font-size: 25px;
+  font-family:'Comfortaa';
 }

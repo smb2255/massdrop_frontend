@@ -7,6 +7,8 @@ const events = require('./jobs/events')
 $(() => {
   setAPIOrigin(location, config)
   events.eventListeners()
+  $('#clickMe').hide()
+  $('#clickMeText').hide()
 })
 
 // use require with a reference to bundle the file and use it in this file

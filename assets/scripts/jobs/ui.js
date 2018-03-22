@@ -14,6 +14,7 @@ const onShowJobsSuccess = function (data) {
   store.jobs = data.jobs
   data.jobs.forEach(job => {
     $('#show-jobs ul').append($('<li>').text(`${job.url}`))
+    $('#clickMe').show()
   })
 }
 
@@ -26,4 +27,5 @@ module.exports = {
   onAddJobFailure,
   onShowJobsSuccess,
   onShowJobFailure
+
 }
